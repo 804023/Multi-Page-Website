@@ -1,6 +1,11 @@
 body {
     background-color: black;
 }
+header {
+    background-color: red;
+    border: 1px solid white;
+    min-width: ;
+}
 .pages button {
     margin: -2px;
     border: 1px solid white;
@@ -13,8 +18,14 @@ body {
     text-decoration: none;
 }
 button:hover {
-    opacity: .8;
+    background-color: rgb(199, 0, 0);
 }
 button.current {
     border: 3px solid white;
+}
+.secret {
+    opacity: 0;
+}
+.secret:hover{
+    opacity: 0.2
 }
