@@ -4,7 +4,6 @@ body {
 header {
     background-color: red;
     border: 1px solid white;
-    min-width: ;
 }
 .pages button {
     margin: -2px;
@@ -28,4 +27,9 @@ button.current {
 }
 .secret:hover{
     opacity: 0.2
+}
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: blue;
 }
