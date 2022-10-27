@@ -33,3 +33,16 @@ h3 {
     font-size: 36px;
     color: blue;
 }
+
+.facts {
+    color: white;
+}
+.question {
+    padding-top: 35px;
+}
+.question, .answer {
+    list-style: none;
+}
+.answer li:hover {
+    color: Yellow;
+}
