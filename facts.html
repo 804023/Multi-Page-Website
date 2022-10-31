@@ -1,53 +1,61 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Other</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <span class="pages">
-                <a href="index.html"><button>Home</button></a>
-                <a href="breeds.html"><button>Breeds</button></a>
-                <button class="current">Fun Facts & Trivia</button>
-            </span>
-        </header>
-        <main>
-            <h3>Fun Facts and Trivia!</h3>
-                <ul class="facts">
-                    <li class="question">1.    Dogs have been domesticated for over ___ years.</li>
-                    <ul class="answer">
-                        <li class="incorrect">A. 1000 Years</li>
-                        <li class="incorrect">B. 5000 Years</li>
-                        <li class="incorrect">C. 10,000 Years</li>
-                        <li class="correct">D. 15,000 Years</li>
-                    </ul>
-                    <li class="question">2.    Dogs noses are ___ so they can absorb scents.</li>
-                    <ul class="answer">
-                        <li class="correct">A. Wet</li>
-                        <li class="incorrect">B. Strong</li>
-                        <li class="incorrect">C. Dry</li>
-                        <li class="incorrect">D. Long</li>
-                    </ul>
-                    <li class="question">3.    __ dogs have survived the Titanic.</li>
-                    <ul class="answer">
-                        <li class="incorrect">A. 1</li>
-                        <li class="correct">B. 3</li>
-                        <li class="incorrect">C. 7</li>
-                        <li class="incorrect">D. 12</li>
-                    </ul>
-                    <li class="question">4.    Bloodhounds sense of ___ can be used in court.</li>
-                    <ul class="answer">
-                        <li class="incorrect">A. Sight</li>
-                        <li class="incorrect">B. Hearing</li>
-                        <li class="correct">C. Smell</li>
-                        <li class="incorrect">D. Taste</li>
-                        <li class="incorrect">E. Touch</li>
-                    </ul>
+body {
+    background-color: black;
+}
+header {
+    background-color: red;
+    border: 1px solid white;
+}
+.pages button {
+    margin: -2px;
+    border: 1px solid white;
+    background-color: red;
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 16px 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+button:hover {
+    background-color: rgb(199, 0, 0);
+}
+button.current {
+    border: 3px solid white;
+}
+.secret {
+    opacity: 0;
+}
+.secret:hover{
+    opacity: 0.2
+}
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: blue;
+}
 
-                </ul>
-        </main>
-    </body>
-</html>
-    </body>
-</html>
+.facts {
+    color: white;
+}
+.question {
+    padding-top: 35px;
+}
+.question, .answer {
+    list-style: none;
+}
+.answer li:hover {
+    color: Yellow;
+    cursor: pointer;
+}
+li.question:hover::after {
+    color: yellow;
+    content: " - Click the answers to see if you are correct!"
+}
+.correct:active::after {
+    color: lime;
+    content: " - Correct Answer! Nice job!";
+}
+.incorrect:active::after {
+    color: red;
+    content: " - Your answer was incorrect. Try again!"
+}
